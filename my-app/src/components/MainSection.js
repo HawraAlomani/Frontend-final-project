@@ -2,7 +2,7 @@ import React from "react";
 import SplineScene from "./SplineScene";
 import styled from "styled-components";
 
-export const MainContainer = styled.div`
+ const MainContainer = styled.div`
   color: #fff;
   background: white;
 
@@ -11,11 +11,11 @@ export const MainContainer = styled.div`
   }
 `;
 
-export const MainWrapper = styled.div`
+ const MainWrapper = styled.div`
   font-family: "Yeseva One", cursive;
   display: grid;
   z-index: 1;
-  height: 700px;
+  height: 860px;
   width: 100%;
   max-width: 1100px;
   margin-right: auto;
@@ -25,7 +25,7 @@ export const MainWrapper = styled.div`
   
 `;
 
-export const MainRow = styled.div`
+const MainRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
   align-items: center;
@@ -37,23 +37,30 @@ export const MainRow = styled.div`
       imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
   }
 `;
-export const Column1 = styled.div`
+const Column1 = styled.div`
   margin-bottom: 15px;
   padding: 0 1px;
   grid-area: col1;
 `;
-export const Column2 = styled.div`
+const Column2 = styled.div`
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
+  
+  @media screen and (max-width: 768px){
+  max-width: 555px;
+  height: 100%;
+  width: 100px;
+  margin: 0 0 100px -40%;
+  }
 `;
 
-export const TextWrapper = styled.div`
+const TextWrapper = styled.div`
   max-width: 700px;
   padding-top: 0;
   padding-bottom: 60px;
 `;
-export const TopLine = styled.p`
+const TopLine = styled.p`
   color: #000000;
   background-color: #ff8087ff;
   padding: 5px 10px;
@@ -71,7 +78,7 @@ export const TopLine = styled.p`
   }
 `;
 
-export const Heading = styled.h1`
+const Heading = styled.h1`
   margin-bottom: 24px;
   font-size: 48px;
   line-height: 1.1;
@@ -81,7 +88,7 @@ export const Heading = styled.h1`
     font-size: 32px;
   }
 `;
-export const Subtitle = styled.p`
+const Subtitle = styled.p`
   border-left: 5px solid #c3c3c3;
   padding-left: 20px;
   max-width: 400px;
@@ -90,18 +97,13 @@ export const Subtitle = styled.p`
   line-height: 24px;
   color: black;
 `;
-export const ImgWrap = styled.div`
-  max-width: 555px;
-  height: 100%;
-  width: 100px;
-  margin: 0 0 100px 0;
-`;
+
 
 
 const MainSection = () => {
   return (
     <>
-      <MainContainer>
+      <MainContainer id={'main'}>
         <MainWrapper>
           <MainRow>
             <Column1>
