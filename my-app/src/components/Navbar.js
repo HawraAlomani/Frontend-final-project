@@ -6,7 +6,8 @@ import { FaBars} from "react-icons/fa";
 import LogoImg from "./images/logoToys2.png";
 
 const Nav = styled.nav`
-  background: white;
+  backdrop-filter: blur(14px);
+  background-color: rgba(255, 255, 255, 0.2);
   height: 90px;
   display: flex;
   justify-content: center;

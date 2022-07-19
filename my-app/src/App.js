@@ -2,6 +2,7 @@ import './App.css';
 import React, {useState} from 'react';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
+import MainSection from './components/MainSection';
 
 function App() {
   //toggle between Sidebar and Navbar
@@ -13,6 +14,7 @@ function App() {
    <>
   <Sidebar isOpen={isOpen} toggle={toggle} />
   <Navbar toggle={toggle} />
+  <MainSection/>
    </>
   );
 }
