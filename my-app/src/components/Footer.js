@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { AiFillHome, AiOutlineMail } from 'react-icons/ai';
+import { AiFillHome, AiOutlineMail, AiOutlinePhone, AiOutlineFacebook, AiFillTwitterSquare, AiOutlineInstagram} from 'react-icons/ai';
+import {FaSnapchatSquare} from 'react-icons/fa';
 
 function Footer() {
   return (
@@ -14,8 +15,7 @@ function Footer() {
               <ul className="list-unstyled">
                 <li> <AiFillHome /> Riyadh, SA</li>
                 <li> <AiOutlineMail /> info@exchange.com</li>
-                <li> +966 5</li>
-                <li> lorem ipsum</li>
+                <li> <AiOutlinePhone/>+966 56 123 4567</li>
               </ul>
             </div>
             {/* Col 2 */}
@@ -41,10 +41,10 @@ function Footer() {
             <div className="col-md-3 col-sm-6">
               <h4>Social media</h4>
               <ul className="list-unstyled">
-              <li> <a href="/">lorem ipsum </a> </li>
-                <li> <a href="/"> lorem ipsum </a> </li>
-                <li> <a href="/"> lorem ipsum </a> </li>
-                <li> <a href="/"> lorem ipsum </a> </li>
+              <li> <a href="/facebook"> <AiOutlineFacebook/> Facebook </a> </li>
+                <li> <a href="/twitter"> <AiFillTwitterSquare/> Twitter </a> </li>
+                <li> <a href="/instagram"> <AiOutlineInstagram/> Instagram </a> </li>
+                <li> <a href="/snapchat"> <FaSnapchatSquare/> Snapchat </a> </li>
               </ul>
             </div>
           </div>
