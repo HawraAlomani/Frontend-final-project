@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import Spline from "@splinetool/react-spline";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence} from "framer-motion";
 
 const AboutContainer = styled.div`
   color: #fff;
@@ -80,11 +80,13 @@ const AboutSection = () => {
             }}
           >
             <motion.h2 layout="position">What's next? ✨</motion.h2>
+            <AnimatePresence>
             {isOpen && (
               <motion.div
                 className="extend"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
+                transition={{duration: 1}}
               >
                 <p>
                   {" "}
@@ -99,6 +101,7 @@ const AboutSection = () => {
                 </p>
               </motion.div>
             )}
+            </AnimatePresence>
           </motion.div>
         </AboutRow>
       </AboutWrapper>
