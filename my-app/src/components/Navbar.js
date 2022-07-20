@@ -33,7 +33,7 @@ const NavbarContainer = styled.div`
   font-family: "Yeseva One", cursive;
 `;
 
-const NavLogo = styled(LinkS)`
+const NavLogo = styled(LinkR)`
   justify-self: flex-start;
   cursor: pointer;
   font-size: 1.5rem;
@@ -64,6 +64,7 @@ const NavMenu = styled.ul`
   list-style: none;
   text-align: center;
   margin-right: -19px;
+  
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -73,7 +74,7 @@ const NavItem = styled.li`
   height: 80px;
 `;
 
-const NavLinks = styled(LinkS)`
+const NavLinksScroll = styled(LinkS)`
   color: black;
   display: flex;
   align-items: center;
@@ -88,6 +89,25 @@ const NavLinks = styled(LinkS)`
   }
   &:hover {
     border-bottom: 3px solid #ff8087ff;
+    color: black;
+  }
+`;
+const NavLinks = styled(LinkR)`
+  color: black;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 1rem;
+  padding-top: 40px;
+  height: 80px;
+  cursor: pointer;
+
+  &.active {
+    border-bottom: 3px solid #ff8087ff;
+  }
+  &:hover {
+    border-bottom: 3px solid #ff8087ff;
+    color: black;
   }
 `;
 
@@ -124,7 +144,7 @@ const Navbar = ({ toggle }) => {
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="main">
+        <NavLogo to="/">
           <img
             src={LogoImg}
             style={{ width: 190, padding: 10, marginTop: 20, marginBottom: 10 }}
@@ -135,17 +155,17 @@ const Navbar = ({ toggle }) => {
           <FaBars />
         </SidebarIcon>
         <NavMenu>
+          {/* <NavItem>
+            <NavLinksScroll to="about">About</NavLinksScroll>
+          </NavItem> */}
           <NavItem>
-            <NavLinks to="about">About</NavLinks>
+            <NavLinks to="/categories">Categories</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="categories">Categories</NavLinks>
+            <NavLinks to="/requests">Requests</NavLinks>
           </NavItem>
           <NavItem>
-            <NavLinks to="requests">Requests</NavLinks>
-          </NavItem>
-          <NavItem>
-            <NavLinks to="deliv-info">Delivery Information</NavLinks>
+            <NavLinks to="/deliv-info">Delivery Information</NavLinks>
           </NavItem>
         </NavMenu>
         <NavBtn>

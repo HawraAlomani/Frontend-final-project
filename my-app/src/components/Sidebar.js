@@ -46,7 +46,23 @@ text-align: center;
 `;
 
 
-const SidebarLink = styled(LinkS)`
+const SidebarLinkScroll = styled(LinkS)`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  text-decoration: none;
+  list-style: none;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+  color: black;
+  cursor: pointer;
+  &:hover {
+    transition: all 0.2s ease-in-out;
+    color: #fee07cff;
+  }
+`;
+const SidebarLink = styled(LinkR)`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -95,16 +111,17 @@ const Sidebar = ({isOpen, toggle}) => {
           </Icon>
           <SidebarWrapper>
               <SidebarMenu>
-                  <SidebarLink to='about'  onClick={toggle}>
-                      About
+                
+                   <SidebarLink to='/'  onClick={toggle}>
+                  Home
                   </SidebarLink>
-                  <SidebarLink to='categories'  onClick={toggle}>
+                  <SidebarLink to='/categories'  onClick={toggle}>
                   Categories
                   </SidebarLink>
-                  <SidebarLink to='requests'  onClick={toggle}>
+                  <SidebarLink to='/requests'  onClick={toggle}>
                   Requests
                   </SidebarLink>
-                  <SidebarLink to='deliv-info'  onClick={toggle}>
+                  <SidebarLink to='/deliv-info'  onClick={toggle}>
                   Delivery Information
                   </SidebarLink>
   

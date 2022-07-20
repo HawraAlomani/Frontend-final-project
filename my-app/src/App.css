@@ -28,3 +28,11 @@
   }
   
 }
+ 
+:root{
+  --mainDark: rgb(53, 53, 70);
+  --mainGrey: rgb(118, 118, 118);
+  --mainLightGrey: rgb(141, 141, 141);
+  --mainWhite: #fff;
+  --mainBlue: rgb(66, 151, 255);
+}
