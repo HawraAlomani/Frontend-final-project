@@ -3,3 +3,28 @@
     margin: 0;
     padding: 0;
   }
+
+.Card {
+  background:  white;
+  color: black;
+  padding: 2rem 4rem;
+  position:absolute;
+  top: -450px;
+  color: rgb(56, 56, 56);
+}
+.Card p{
+  color: rgb(82, 82, 82);
+  padding-top: 0.2rem;
+  line-height: 150%;
+  font-size: 16px;
+}
+.extend{
+  width: 30rem;
+
+}
+@media screen and (max-width: 680px) {
+  .extend{
+    width: 20rem;
+  }
+  
+}
