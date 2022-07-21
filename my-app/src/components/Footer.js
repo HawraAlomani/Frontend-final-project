@@ -64,6 +64,8 @@ export default Footer;
 
 const FooterContainer = styled.footer`
 .footer-middle {
+  font-family: "Yeseva One", cursive;
+  font-size: 15px;
     background: var(--mainWhite);
     padding-top: 3rem;
     color: var(--mainDark);

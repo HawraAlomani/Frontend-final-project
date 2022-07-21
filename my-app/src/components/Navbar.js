@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { Link as LinkR } from "react-router-dom";
-import { Link as LinkS } from "react-scroll";
+// import { Link as LinkS } from "react-scroll";
 import { FaBars} from "react-icons/fa";
 import LogoImg from "./images/logoToys2.png";
 
@@ -74,24 +74,24 @@ const NavItem = styled.li`
   height: 80px;
 `;
 
-const NavLinksScroll = styled(LinkS)`
-  color: black;
-  display: flex;
-  align-items: center;
-  text-decoration: none;
-  padding: 0 1rem;
-  padding-top: 40px;
-  height: 80px;
-  cursor: pointer;
+// const NavLinksScroll = styled(LinkS)`
+//   color: black;
+//   display: flex;
+//   align-items: center;
+//   text-decoration: none;
+//   padding: 0 1rem;
+//   padding-top: 40px;
+//   height: 80px;
+//   cursor: pointer;
 
-  &.active {
-    border-bottom: 3px solid #ff8087ff;
-  }
-  &:hover {
-    border-bottom: 3px solid #ff8087ff;
-    color: black;
-  }
-`;
+//   &.active {
+//     border-bottom: 3px solid #ff8087ff;
+//   }
+//   &:hover {
+//     border-bottom: 3px solid #ff8087ff;
+//     color: black;
+//   }
+// `;
 const NavLinks = styled(LinkR)`
   color: black;
   display: flex;

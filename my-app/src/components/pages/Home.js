@@ -1,9 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import MainSection from "../MainSection";
 import AboutSection from "../AboutSection";
-import Footer from "../Footer";
-import Sidebar from "../Sidebar";
-import Navbar from "../Navbar";
+
 const Home = () => {
   return (
     <>
