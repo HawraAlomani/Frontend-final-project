@@ -13,11 +13,18 @@ import {
 } from "mdb-react-ui-kit";
 import Img3 from '../images/img3board.png';
 import { BiCommentAdd} from "react-icons/bi";
+import {useEffect} from 'react';
+import { ToastContainer,toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const Requests = () => {
+  useEffect( ()=> {
+    toast.warning("You must Login in order to make a request!")}, []);
+  const notify = () => toast.warning("Must login to add a request!");
   return (
     <Container>
+      <ToastContainer position="top-center"/>
     <MDBCard className='text-center'>
       <ContainerMain>
     <Breadcrumb >
@@ -31,7 +38,7 @@ const Requests = () => {
     <MDBRow className="row-cols-1 row-cols-md-3 g-4">
       <MDBCol>
         <MDBCard className='h-100'>
-            <ContainerIcon>
+            <ContainerIcon  onClick={notify} >
             <MDBCardTitle><BiCommentAdd size={100} color={`#ff8087ff`} /></MDBCardTitle>
             </ContainerIcon>
           <MDBCardFooter>
