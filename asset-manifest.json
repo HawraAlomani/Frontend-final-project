@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Frontend-final-project-Toy-Exchange/static/css/main.939fd4cd.css",
-    "main.js": "/Frontend-final-project-Toy-Exchange/static/js/main.4767de70.js",
-    "static/js/232.314d566b.chunk.js": "/Frontend-final-project-Toy-Exchange/static/js/232.314d566b.chunk.js",
-    "static/js/787.28cb0dcd.chunk.js": "/Frontend-final-project-Toy-Exchange/static/js/787.28cb0dcd.chunk.js",
-    "static/media/img2toy.png": "/Frontend-final-project-Toy-Exchange/static/media/img2toy.92e7578784c93a1d73bf.png",
-    "static/media/img3board.png": "/Frontend-final-project-Toy-Exchange/static/media/img3board.f8504355b014950ed36a.png",
-    "static/media/img1PS.png": "/Frontend-final-project-Toy-Exchange/static/media/img1PS.ace35d385a7d3dd75faf.png",
-    "static/media/img4toys.png": "/Frontend-final-project-Toy-Exchange/static/media/img4toys.adec653ae7cfcc65b00a.png",
-    "static/media/logoToys2.png": "/Frontend-final-project-Toy-Exchange/static/media/logoToys2.29ab37112f61e4fb96b9.png",
-    "index.html": "/Frontend-final-project-Toy-Exchange/index.html",
-    "main.939fd4cd.css.map": "/Frontend-final-project-Toy-Exchange/static/css/main.939fd4cd.css.map",
-    "main.4767de70.js.map": "/Frontend-final-project-Toy-Exchange/static/js/main.4767de70.js.map",
-    "232.314d566b.chunk.js.map": "/Frontend-final-project-Toy-Exchange/static/js/232.314d566b.chunk.js.map",
-    "787.28cb0dcd.chunk.js.map": "/Frontend-final-project-Toy-Exchange/static/js/787.28cb0dcd.chunk.js.map"
+    "main.css": "/Frontend-final-project/static/css/main.939fd4cd.css",
+    "main.js": "/Frontend-final-project/static/js/main.4d76b570.js",
+    "static/js/232.314d566b.chunk.js": "/Frontend-final-project/static/js/232.314d566b.chunk.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Frontend-final-project/static/js/787.28cb0dcd.chunk.js",
+    "static/media/img2toy.png": "/Frontend-final-project/static/media/img2toy.92e7578784c93a1d73bf.png",
+    "static/media/img3board.png": "/Frontend-final-project/static/media/img3board.f8504355b014950ed36a.png",
+    "static/media/img1PS.png": "/Frontend-final-project/static/media/img1PS.ace35d385a7d3dd75faf.png",
+    "static/media/img4toys.png": "/Frontend-final-project/static/media/img4toys.adec653ae7cfcc65b00a.png",
+    "static/media/logoToys2.png": "/Frontend-final-project/static/media/logoToys2.29ab37112f61e4fb96b9.png",
+    "index.html": "/Frontend-final-project/index.html",
+    "main.939fd4cd.css.map": "/Frontend-final-project/static/css/main.939fd4cd.css.map",
+    "main.4d76b570.js.map": "/Frontend-final-project/static/js/main.4d76b570.js.map",
+    "232.314d566b.chunk.js.map": "/Frontend-final-project/static/js/232.314d566b.chunk.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Frontend-final-project/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.939fd4cd.css",
-    "static/js/main.4767de70.js"
+    "static/js/main.4d76b570.js"
   ]
 }
