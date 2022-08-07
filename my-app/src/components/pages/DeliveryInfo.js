@@ -121,6 +121,6 @@ const AboutP = styled.p`
   text-align: left;
 `;
 const ContainerInfo = styled.div`
-  width: 50%;
+  width: 100%;
   margin: 0 auto;
 `
